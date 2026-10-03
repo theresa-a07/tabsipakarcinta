@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="tabsipakarcinta adalah ruang aman untuk Gen Z berbagi cerita, melakukan check-in, dan mencari teman konsultasi." />
+    <meta name="theme-color" content="#10243f" />
+    <title>tabsipakarcinta — Kamu nggak harus kuat sendirian</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="top-note">
+      <span class="top-note__dot" aria-hidden="true"></span>
+      <span>Ruang aman untuk cerita yang belum sempat kamu ucapkan.</span>
+      <a href="#crisis">Butuh bantuan segera?</a>
+    </div>
+
+    <header class="site-header" id="home">
+      <a class="brand" href="#home" aria-label="tabsipakarcinta, kembali ke atas">
+        <span class="brand__mark" aria-hidden="true">↗</span>
+        <span>tabsi<span class="brand__accent">pakarcinta</span></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Menu</button>
+      <nav class="main-nav" id="main-nav" aria-label="Navigasi utama">
+        <a href="#tentang">Kenapa ada di sini</a>
+        <a href="#share">Berbagi cerita</a>
+        <a href="#consult">Konsultasi</a>
+        <a class="nav-cta" href="#share">Ayo sharing pengalamanmu</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero section-shell">
+        <div class="hero__copy reveal">
+          <p class="eyebrow"><span class="eyebrow__line"></span>Ruang ngobrol untuk Gen Z</p>
+          <h1>Kamu nggak harus kuat <em>sendirian.</em></h1>
+          <p class="hero__lead">Ada hari ketika kepala terlalu ramai, hati terlalu penuh, dan menjelaskan semuanya terasa melelahkan. Di sini, kamu boleh mulai dari satu kalimat kecil.</p>
+          <div class="hero__actions">
+            <a class="button button--primary" href="#share">Ayo sharing pengalamanmu <span aria-hidden="true">↗</span></a>
+            <a class="text-link" href="#tentang">Kenali ruang ini <span aria-hidden="true">↓</span></a>
+          </div>
+          <div class="hero__trust">
+            <div class="avatar-stack" aria-hidden="true"><span>R</span><span>A</span><span>N</span><span>+</span></div>
+            <p>Sudah ada yang mulai cerita hari ini.<br /><strong>Anonim by default.</strong></p>
+          </div>
+        </div>
+
+        <div class="hero__art reveal" aria-label="Kartu pengingat untuk beristirahat">
+          <div class="hero-card hero-card--main">
+            <div class="hero-card__top"><span>daily check-in</span><span class="hero-card__sun">☼</span></div>
+            <p>Hari ini aku merasa...</p>
+            <div class="mood-row" aria-hidden="true"><span>😵‍💫</span><span>😕</span><span class="mood-row__active">😮‍💨</span><span>🙂</span><span>✨</span></div>
+            <div class="hero-card__footer"><span>nggak harus punya jawaban</span><span>03 / 10</span></div>
+          </div>
+          <div class="hero-card hero-card--quote"><span class="quote-mark">“</span><p>Pelan-pelan juga tetap bergerak.</p><span class="quote-author">— catatan untuk hari ini</span></div>
+          <div class="hero-sticker hero-sticker--left">take<br />a breath</div>
+          <div class="hero-sticker hero-sticker--right">✳</div>
+        </div>
+      </section>
+
+      <section class="promise-strip" aria-label="Janji tabsipakarcinta">
+        <div><span class="strip-number">01</span><span>Didengar tanpa dihakimi</span></div>
+        <div><span class="strip-number">02</span><span>Anonim ketika kamu mau</span></div>
+        <div><span class="strip-number">03</span><span>Bukan pengganti profesional</span></div>
+      </section>
+
+      <section class="intro section-shell" id="tentang">
+        <div class="section-heading reveal">
+          <p class="eyebrow"><span class="eyebrow__line"></span>Kenapa ruang ini ada</p>
+          <h2>Kita hidup di timeline yang ramai. <em>Perasaanmu tetap layak punya ruang.</em></h2>
+        </div>
+        <div class="intro__body reveal">
+          <p>Tekanan untuk selalu produktif, terlihat baik-baik saja, dan tahu arah hidup bisa terasa berat—terutama saat semua orang tampak melaju.</p>
+          <p>tabsipakarcinta dibuat untuk membantu kamu mengambil napas, menemukan kata-kata, dan terhubung dengan orang yang bisa mendengarkan.</p>
+        </div>
+      </section>
+
+      <section class="pathways section-shell" id="checkin">
+        <div class="section-label-row reveal"><p class="eyebrow"><span class="eyebrow__line"></span>Mulai dari yang paling ringan</p><span class="section-index">/ 02</span></div>
+        <div class="pathways__grid">
+          <article class="path-card path-card--checkin reveal">
+            <div class="path-card__number">01</div>
+            <div class="path-card__icon" aria-hidden="true">◌</div>
+            <h3>Check-in tanpa banyak pikir</h3>
+            <p>Pilih yang paling mendekati rasamu hari ini. Tidak ada jawaban yang salah.</p>
+            <div class="quick-checkin" role="group" aria-label="Pilih kondisi hari ini">
+              <button type="button" data-mood="Lagi penuh">Lagi penuh</button>
+              <button type="button" data-mood="Butuh jeda">Butuh jeda</button>
+              <button type="button" data-mood="Lumayan">Lumayan</button>
+              <button type="button" data-mood="Lega">Lega</button>
+            </div>
+            <p class="form-feedback" id="checkin-feedback" role="status"></p>
+          </article>
+          <article class="path-card path-card--share reveal">
+            <div class="path-card__number">02</div>
+            <div class="path-card__icon" aria-hidden="true">✦</div>
+            <h3>Tulis, kalau kamu siap</h3>
+            <p>Bagikan cerita secara anonim. Mungkin tulisanmu jadi pelukan kecil untuk orang lain.</p>
+            <a class="card-link" href="#share">Masuk ke ruang berbagi <span aria-hidden="true">↗</span></a>
+            <span class="path-card__scribble" aria-hidden="true">you are<br />not alone</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="stories section-shell" id="share">
+        <div class="stories__intro reveal">
+          <p class="eyebrow"><span class="eyebrow__line"></span>Ruang berbagi</p>
+          <h2>Satu cerita bisa membuat seseorang merasa <em>nggak sendirian.</em></h2>
+          <p>Nama tidak perlu dicantumkan. Bagikan secukupnya, sesuai batas nyamanmu.</p>
+        </div>
+        <div class="stories__content">
+          <form class="form-card reveal" id="share-form">
+            <div class="form-card__heading"><span class="form-card__index">03 / share</span><span class="lock-label">⌁ anonim</span></div>
+            <label for="share-topic">Topik yang paling dekat</label>
+            <select id="share-topic" name="topic" required>
+              <option value="">Pilih satu topik</option>
+              <option>Overthinking</option>
+              <option>Burnout</option>
+              <option>Relasi</option>
+              <option>Keluarga</option>
+              <option>Kuliah / kerja</option>
+              <option>Self-worth</option>
+            </select>
+            <label for="share-message">Yang ingin kamu bagikan</label>
+            <textarea id="share-message" name="message" rows="5" minlength="20" maxlength="500" placeholder="Tulis tanpa harus merapikan semuanya..." required></textarea>
+            <label class="checkbox-label"><input type="checkbox" name="consent" required /><span>Saya setuju cerita ini ditampilkan tanpa nama.</span></label>
+            <button class="button button--dark" type="submit">Kirim ke ruang berbagi <span aria-hidden="true">↗</span></button>
+            <p class="form-feedback" id="share-feedback" role="status"></p>
+          </form>
+
+          <div class="story-list reveal" id="story-list" aria-live="polite">
+            <div class="story-list__top"><span>yang sedang dibagikan</span><span class="live-dot">● live</span></div>
+            <div class="story-list__items"><p class="loading-copy">Mengambil cerita terbaru...</p></div>
+            <p class="story-list__note">Cerita dimoderasi untuk menjaga ruang ini tetap aman dan suportif.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="consult section-shell" id="consult">
+        <div class="consult__visual reveal">
+          <div class="consult-note consult-note--back"></div>
+          <div class="consult-note consult-note--front">
+            <span class="note-line"></span><span class="note-line note-line--short"></span>
+            <p>ngobrol<br />pelan-pelan<br />saja.</p>
+            <span class="note-spark">✦</span>
+          </div>
+          <span class="consult-stamp">a safe<br />space<br />to land</span>
+        </div>
+        <div class="consult__copy reveal">
+          <p class="eyebrow"><span class="eyebrow__line"></span>Kalau ingin ditemani</p>
+          <h2>Nggak harus tahu <em>mulai dari mana.</em></h2>
+          <p>Ceritakan sedikit konteksnya. Tim pendamping kami akan menghubungi kamu lewat kanal yang kamu pilih untuk menentukan langkah berikutnya.</p>
+          <ul class="check-list"><li>Obrolan awal yang hangat dan tidak menghakimi</li><li>Kamu tetap punya kendali atas ceritamu</li><li>Dirujuk ke bantuan profesional bila diperlukan</li></ul>
+          <a class="text-link text-link--coral" href="#consult-form">Isi form konsultasi <span aria-hidden="true">↓</span></a>
+        </div>
+      </section>
+
+      <section class="consult-form-section section-shell" id="consult-form">
+        <form class="consult-form reveal" id="consultation-form">
+          <div class="consult-form__heading"><p class="eyebrow"><span class="eyebrow__line"></span>Request a session</p><p class="form-card__index">04 / consult</p></div>
+          <h2>Kita mulai dari <em>satu pesan kecil.</em></h2>
+          <div class="form-grid">
+            <div><label for="consult-name">Nama panggilan</label><input id="consult-name" name="name" type="text" placeholder="Misal: Ara" required /></div>
+            <div><label for="consult-contact">Email / nomor WhatsApp</label><input id="consult-contact" name="contact" type="text" placeholder="Kontak yang aktif" required /></div>
+            <div><label for="consult-topic">Aku ingin ngobrol tentang</label><select id="consult-topic" name="topic" required><option value="">Pilih topik</option><option>Overthinking</option><option>Burnout</option><option>Relasi</option><option>Keluarga</option><option>Kuliah / kerja</option><option>Self-worth</option></select></div>
+            <div><label for="consult-channel">Hubungi aku lewat</label><select id="consult-channel" name="channel" required><option value="">Pilih kanal</option><option>Email</option><option>WhatsApp</option></select></div>
+          </div>
+          <label for="consult-message">Sedikit tentang yang sedang terjadi</label>
+          <textarea id="consult-message" name="message" rows="4" minlength="20" maxlength="700" placeholder="Tidak perlu sempurna. Tulis sejujurnya sebisamu." required></textarea>
+          <div class="consult-form__bottom"><p>Kami menjaga kerahasiaan data sesuai kebutuhan layanan. Untuk kondisi darurat, gunakan bantuan segera di bawah.</p><button class="button button--primary" type="submit">Kirim permintaan <span aria-hidden="true">↗</span></button></div>
+          <p class="form-feedback" id="consult-feedback" role="status"></p>
+        </form>
+      </section>
+
+      <section class="resources section-shell">
+        <div class="section-label-row reveal"><p class="eyebrow"><span class="eyebrow__line"></span>Jeda kecil, dampak nyata</p><span class="section-index">/ 05</span></div>
+        <div class="resources__heading reveal"><h2>Teman baca saat kamu butuh <em>bahasa yang sederhana.</em></h2><p>Materi singkat yang bisa kamu simpan untuk dibaca lagi kapan pun.</p></div>
+        <div class="resource-grid" id="resource-grid"><p class="loading-copy">Memuat materi...</p></div>
+      </section>
+
+      <section class="crisis section-shell" id="crisis">
+        <div class="crisis__mark" aria-hidden="true">!</div>
+        <div><p class="eyebrow eyebrow--light"><span class="eyebrow__line"></span>Kalau situasinya terasa darurat</p><h2>Kamu pantas mendapat bantuan <em>sekarang.</em></h2><p>Jika kamu merasa ingin menyakiti diri atau tidak aman, hubungi orang tepercaya, hubungi <strong>088983460684</strong>, atau pergi ke IGD terdekat.</p></div>
+        <a class="button button--light" href="tel:088983460684">Hubungi 088983460684 <span aria-hidden="true">↗</span></a>
+      </section>
+    </main>
+
+    <footer class="site-footer section-shell">
+      <div><a class="brand brand--footer" href="#home"><span class="brand__mark" aria-hidden="true">↗</span><span>tabsi<span class="brand__accent">pakarcinta</span></span></a><p>Tempat untuk berhenti sebentar,<br />sebelum melanjutkan lagi.</p></div>
+      <div class="footer-links"><a href="#share">Berbagi</a><a href="#consult">Konsultasi</a><a href="#crisis">Bantuan segera</a></div>
+      <div class="footer-meta"><span>© 2026 tabsipakarcinta</span><span>dibuat dengan jeda</span></div>
+    </footer>
+    <script src="/app.js" defer></script>
+  </body>
+</html>
